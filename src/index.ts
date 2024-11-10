@@ -1,6 +1,6 @@
 import { Matterbridge, PlatformConfig } from 'matterbridge';
 import { AnsiLogger } from 'matterbridge/logger';
-import { ExampleMatterbridgeDynamicPlatform } from './platform.js';
+import { TasmotaBridgeDynamicPlatform } from './platform.js';
 
 /**
  * This is the standard interface for Matterbridge plugins.
@@ -12,5 +12,5 @@ import { ExampleMatterbridgeDynamicPlatform } from './platform.js';
  * @returns {ExampleMatterbridgeDynamicPlatform} The initialized platform.
  */
 export default function initializePlugin(matterbridge: Matterbridge, log: AnsiLogger, config: PlatformConfig): ExampleMatterbridgeDynamicPlatform {
-  return new ExampleMatterbridgeDynamicPlatform(matterbridge, log, config);
+  return new TasmotaBridgeDynamicPlatform(matterbridge, log, config);
 }
